@@ -40,11 +40,18 @@ Each python will generate .csv files per administrative level (1 - 3) in Cote d'
   * **ciir62sv/snir6dsv** - contains individual recode file and generated csv files pertaining regional distribution of women's access to ealth at all administrative levels.
   * **Cluster_to_Region** - contains csv file mapping of DHS cluster to region in administrative levels 1 to 3.
   * **Region_Population** - contain csv file detailing population contained in each DHS cluster voronoi polygon.
-  * **Voronoi_clusters/Proportions** - contains csv files detailing the proportion of DHS cluster voronoi polygon overlapping with each region for administrative levels 1 to 3.
+  * **Voronoi_clusters/Proportions** - contains csv files detailing the proportion of DHS cluster voronoi polygon overlapping with each region at all administrative levels.
   
     * ### CDR Feature Extraction
   
   To extract information pertaining the CDR metrics for both Cote d'Ivoire and Senegal, the *CDR_Analysis* python notebook should be run. Take note that due to the large size of the CDR datasets, the script will take on average 30mins to generate the required .csv files for both countries. The results for both countries will be found in the CDR_Data_IC and CDR_Data_Sen for Cote d'Ivoire and Senegal respectively. These directories are organized as follows:
   
-  * **Activity/Introversion
+  * **Activity/Introversion/Gravity_Residual/Network_Advantage** - These are sub-directories that will contain the generated csv files concerning the regional distribution of the metrics at all administrative levels.
+  * **region_centroids** - contains csv files detailing geo-locations of the centroids of each region at all administrative levels.
+  * **Region_Population** - contains csv files detailing the population contained in each region at all administrative levels.
+  * **Voronoi_Polygons/Proportions** - contains csv files detailing the proportion of the cell antenna voronoi polygons overlapping with each region at all administrative levels.
+  * **Points_In_Polygons** - contains csv files detailing the total number of cell antennas in each region per administrative level.
+  * **ANT_POS.TSV/SITE_LONLAT.CSV** - details the geo-locations of cell antennas in Cote d'Ivoire/Senegal.
+  
+  
   
