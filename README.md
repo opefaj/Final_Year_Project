@@ -53,5 +53,12 @@ Each python will generate .csv files per administrative level (1 - 3) in Cote d'
   * **Points_In_Polygons** - contains csv files detailing the total number of cell antennas in each region per administrative level.
   * **ANT_POS.TSV/SITE_LONLAT.CSV** - details the geo-locations of cell antennas in Cote d'Ivoire/Senegal.
   
+  * ## Correlation Analyses
   
+  To perform correlation analysis between the extracted DHS health indicators and the CDR metrics, the *Ivory_Coast_Correlations* and *Senegal_Correlations* should be run. Each notebook will populate the *Regression* sub-directory of both *CDR_Data_IC* and *CD_Data_Sen* with the normalized and standardized CDR and DHS data.
   
+  * ## Ordinary Least Squares (OLS) Regression
+  For Cote d'Ivoire and Senegal, the *IC_Regression_Models* and *Sen_Regression* python notebooks can be run to build simple linear models estimating the health indicators. The scripts will generate text files detailing information about the simple linear models such as the adjusted R-squared, p-values and beta values. The text files for both countries can be round in the *Regression_Results/IC/OLS* or *Regression_Results/SEN/OLS* sub-directory. The sub-directories contain three text files for each administrative level. Both directories contain a sample of a regression result.
+  
+  * ## Stepwise Linear Regression
+  As with the OLS models, the *IC_Stepwise_Regression* and *Sen_Stepwise_Regression* notebooks will generate text files in the *Regression_Results/IC/STEPWISE* and *Regression_Results/SEN/STEPWISE* sub-directories. Both directories contain a sample of a regression result.
