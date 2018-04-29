@@ -20,7 +20,7 @@
  The CDR Data for Cote d'Ivoire can be downloaded from the following links respectively:
  
  * [Cote d'Ivoire](http://yahoo.co.uk)
- * [Senegal](http://yahoo.co.uk)
+ * [Senegal](https://drive.google.com/file/d/1wdCdb-VkDAjtTNyVQJJsSquMXubr2ulL/view?usp=sharing)
 
 The Cote d'Ivoire CDR directory must be named SET1TSV and contain files with the extension .TSV. The SET1TSV directory must be placed in the CDR_Data_IC directory provided in the respository. 
 
