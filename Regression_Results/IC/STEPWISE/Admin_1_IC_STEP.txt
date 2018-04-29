@@ -1,0 +1,138 @@
+---------------------------------HIV RATE---------------------------------
+
+Call:
+lm(formula = y_aids_1 ~ activity)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.97101 -0.39005 -0.00267  0.26367  2.07654 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 1.961e-16  1.567e-01   0.000 1.000000    
+activity    7.631e-01  1.567e-01   4.868 0.000144 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6832 on 17 degrees of freedom
+Multiple R-squared:  0.5823,	Adjusted R-squared:  0.5577 
+F-statistic:  23.7 on 1 and 17 DF,  p-value: 0.0001445
+
+Breush-Pagan Test
+
+	studentized Breusch-Pagan test
+
+data:  response
+BP = 0.033793, df = 1, p-value = 0.8541
+
+---------------------------------CHILD MORTALITY RATE---------------------------------
+
+Call:
+lm(formula = y_cm_1 ~ 1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.38076 -0.78194 -0.07054  0.79164  2.11272 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)
+(Intercept) -5.094e-17  2.357e-01       0        1
+
+Residual standard error: 1.027 on 18 degrees of freedom
+
+---------------------------------MALARIA RATE (RAPID) ---------------------------------
+
+Call:
+lm(formula = y_malaria_rapid_1 ~ median_degree)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.2762 -0.4329 -0.2217  0.2475  2.7990 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   5.330e-16  2.010e-01   0.000   1.0000  
+median_degree 5.595e-01  2.010e-01   2.783   0.0127 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8762 on 17 degrees of freedom
+Multiple R-squared:  0.313,	Adjusted R-squared:  0.2726 
+F-statistic: 7.746 on 1 and 17 DF,  p-value: 0.01275
+
+Breush-Pagan Test
+
+	studentized Breusch-Pagan test
+
+data:  response
+BP = 1.558, df = 1, p-value = 0.212
+
+---------------------------------MALARIA RATE (LAB) ---------------------------------
+
+Call:
+lm(formula = y_malaria_lab_1 ~ median_degree)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.3364 -0.3515 -0.1266  0.3630  2.0833 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   7.732e-16  1.763e-01   0.000  1.00000   
+median_degree 6.865e-01  1.763e-01   3.893  0.00117 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7687 on 17 degrees of freedom
+Multiple R-squared:  0.4713,	Adjusted R-squared:  0.4403 
+F-statistic: 15.16 on 1 and 17 DF,  p-value: 0.001169
+
+Breush-Pagan Test
+
+	studentized Breusch-Pagan test
+
+data:  response
+BP = 2.8083, df = 1, p-value = 0.09378
+
+-------------------WHA RATE (NUM ANTENATAL CARE) --------------------
+
+Call:
+lm(formula = y_wha_care_1 ~ activity)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.9854 -0.3007 -0.1012  0.1990  2.5775 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 3.429e-17  1.712e-01   0.000 1.000000    
+activity    7.085e-01  1.712e-01   4.139 0.000686 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7461 on 17 degrees of freedom
+Multiple R-squared:  0.502,	Adjusted R-squared:  0.4727 
+F-statistic: 17.13 on 1 and 17 DF,  p-value: 0.000686
+
+Breush-Pagan Test
+
+	studentized Breusch-Pagan test
+
+data:  response
+BP = 0.013463, df = 1, p-value = 0.9076
+
+-----------------------WHA RATE (ZERO ANTENATAL CARE) -----------------------
+
+Call:
+lm(formula = y_wha_nocare_1 ~ 1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.16514 -0.63880  0.05341  0.43657  2.22244 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept) 1.019e-16  2.357e-01       0        1
+
+Residual standard error: 1.027 on 18 degrees of freedom
+

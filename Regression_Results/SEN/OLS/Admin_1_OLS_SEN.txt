@@ -1,0 +1,155 @@
+CHILD MORTALITY RATE
+x1: activity x2: gravity residual x3: introversion X4: entropy x5: median degree
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           CM_Pop_Count   R-squared:                       0.925
+Model:                            OLS   Adj. R-squared:                  0.849
+Method:                 Least Squares   F-statistic:                     12.27
+Date:                Sun, 29 Apr 2018   Prob (F-statistic):            0.00780
+Time:                        02:15:47   Log-Likelihood:                -1.3891
+No. Observations:                  11   AIC:                             14.78
+Df Residuals:                       5   BIC:                             17.17
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const       1.071e-17      0.123   8.72e-17      1.000      -0.316       0.316
+x1             0.7718      0.501      1.539      0.184      -0.517       2.061
+x2            -0.2867      0.451     -0.636      0.553      -1.445       0.872
+x3            -0.4393      0.267     -1.645      0.161      -1.126       0.247
+x4             0.3316      0.261      1.273      0.259      -0.338       1.001
+x5            -0.1898      0.300     -0.633      0.555      -0.961       0.582
+==============================================================================
+Omnibus:                        1.621   Durbin-Watson:                   2.471
+Prob(Omnibus):                  0.445   Jarque-Bera (JB):                0.978
+Skew:                          -0.692   Prob(JB):                        0.613
+Kurtosis:                       2.535   Cond. No.                         10.4
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+MALARIA RATE - RAPID TESTS 
+x1: introversion 
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        Rapid_Pop_Count   R-squared:                       0.431
+Model:                            OLS   Adj. R-squared:                  0.368
+Method:                 Least Squares   F-statistic:                     6.817
+Date:                Sun, 29 Apr 2018   Prob (F-statistic):             0.0282
+Time:                        02:15:47   Log-Likelihood:                -12.507
+No. Observations:                  11   AIC:                             29.01
+Df Residuals:                       9   BIC:                             29.81
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const       1.561e-16      0.251   6.21e-16      1.000      -0.569       0.569
+x1            -0.6565      0.251     -2.611      0.028      -1.225      -0.088
+==============================================================================
+Omnibus:                        3.381   Durbin-Watson:                   2.637
+Prob(Omnibus):                  0.184   Jarque-Bera (JB):                1.270
+Skew:                           0.820   Prob(JB):                        0.530
+Kurtosis:                       3.291   Cond. No.                         1.00
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+MALARIA RATE - LAB TESTS 
+x1: gravity residual x2: median degree
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          Lab_Pop_Count   R-squared:                       0.207
+Model:                            OLS   Adj. R-squared:                  0.009
+Method:                 Least Squares   F-statistic:                     1.047
+Date:                Sun, 29 Apr 2018   Prob (F-statistic):              0.395
+Time:                        02:15:47   Log-Likelihood:                -14.330
+No. Observations:                  11   AIC:                             34.66
+Df Residuals:                       8   BIC:                             35.85
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const      -8.821e-17      0.315   -2.8e-16      1.000      -0.726       0.726
+x1             0.7804      0.588      1.328      0.221      -0.575       2.136
+x2            -0.8400      0.588     -1.429      0.191      -2.196       0.515
+==============================================================================
+Omnibus:                        0.512   Durbin-Watson:                   2.283
+Prob(Omnibus):                  0.774   Jarque-Bera (JB):                0.224
+Skew:                           0.309   Prob(JB):                        0.894
+Kurtosis:                       2.673   Cond. No.                         3.44
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+WOMENS ACCESS TO HEALTH - NUM ANTENATAL CARE VISITS 
+x1: activity x2: gravity residual x3: introversion x4: entropy x5: median degree
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         Care_Pop_Count   R-squared:                       0.982
+Model:                            OLS   Adj. R-squared:                  0.964
+Method:                 Least Squares   F-statistic:                     54.50
+Date:                Sun, 29 Apr 2018   Prob (F-statistic):           0.000232
+Time:                        02:15:47   Log-Likelihood:                 6.4813
+No. Observations:                  11   AIC:                           -0.9626
+Df Residuals:                       5   BIC:                             1.425
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const      -1.416e-16      0.060  -2.36e-15      1.000      -0.154       0.154
+x1             0.9594      0.245      3.913      0.011       0.329       1.590
+x2            -0.3364      0.220     -1.527      0.187      -0.903       0.230
+x3            -0.2272      0.131     -1.740      0.142      -0.563       0.108
+x4             0.3603      0.127      2.828      0.037       0.033       0.688
+x5            -0.0912      0.147     -0.621      0.562      -0.468       0.286
+==============================================================================
+Omnibus:                        1.202   Durbin-Watson:                   1.415
+Prob(Omnibus):                  0.548   Jarque-Bera (JB):                0.856
+Skew:                          -0.606   Prob(JB):                        0.652
+Kurtosis:                       2.367   Cond. No.                         10.4
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+WOMENS ACCESS TO HEALTH - ZERO ANTENATAL CARE VISITS 
+x1: introversion x2: median degree
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         Zero_Pop_Count   R-squared:                       0.562
+Model:                            OLS   Adj. R-squared:                  0.453
+Method:                 Least Squares   F-statistic:                     5.134
+Date:                Sun, 29 Apr 2018   Prob (F-statistic):             0.0368
+Time:                        02:15:47   Log-Likelihood:                -11.067
+No. Observations:                  11   AIC:                             28.13
+Df Residuals:                       8   BIC:                             29.33
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        3.28e-16      0.234    1.4e-15      1.000      -0.540       0.540
+x1            -0.9000      0.287     -3.130      0.014      -1.563      -0.237
+x2            -0.6832      0.287     -2.376      0.045      -1.346      -0.020
+==============================================================================
+Omnibus:                        0.128   Durbin-Watson:                   2.343
+Prob(Omnibus):                  0.938   Jarque-Bera (JB):                0.333
+Skew:                          -0.123   Prob(JB):                        0.847
+Kurtosis:                       2.184   Cond. No.                         1.94
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+

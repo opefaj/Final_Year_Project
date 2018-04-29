@@ -1,0 +1,141 @@
+---------------------------------CM RATE---------------------------------
+
+Call:
+lm(formula = y_cm_1 ~ activity + introversion + norm_entropy)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.63062 -0.14630  0.02303  0.20399  0.44841 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   9.208e-16  1.119e-01   0.000   1.0000  
+activity      3.530e-01  1.455e-01   2.426   0.0457 *
+introversion -4.799e-01  2.212e-01  -2.170   0.0666 .
+norm_entropy  2.410e-01  2.010e-01   1.198   0.2697  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3712 on 7 degrees of freedom
+Multiple R-squared:  0.9123,	Adjusted R-squared:  0.8747 
+F-statistic: 24.28 on 3 and 7 DF,  p-value: 0.0004485
+
+Breush-Pagan Test
+
+	studentized Breusch-Pagan test
+
+data:  response
+BP = 1.4392, df = 3, p-value = 0.6964
+
+---------------------------------MALARIA RATE (RAPID)---------------------------------
+
+Call:
+lm(formula = y_malaria_rapid_1 ~ introversion)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.9385 -0.6010 -0.0971  0.2795  1.7640 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   2.908e-16  2.514e-01   0.000   1.0000  
+introversion -6.565e-01  2.514e-01  -2.611   0.0282 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8339 on 9 degrees of freedom
+Multiple R-squared:  0.431,	Adjusted R-squared:  0.3678 
+F-statistic: 6.817 on 1 and 9 DF,  p-value: 0.02823
+
+Breush-Pagan Test
+
+	studentized Breusch-Pagan test
+
+data:  response
+BP = 0.71347, df = 1, p-value = 0.3983
+
+---------------------------------MALARIA RATE (LAB)---------------------------------
+
+Call:
+lm(formula = y_malaria_lab_1 ~ gravity_residual + median_degree)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.5712 -0.3740 -0.2412  0.3308  1.7029 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)
+(Intercept)      -2.170e-16  3.148e-01   0.000    1.000
+gravity_residual  7.804e-01  5.878e-01   1.328    0.221
+median_degree    -8.400e-01  5.878e-01  -1.429    0.191
+
+Residual standard error: 1.044 on 8 degrees of freedom
+Multiple R-squared:  0.2074,	Adjusted R-squared:  0.009224 
+F-statistic: 1.047 on 2 and 8 DF,  p-value: 0.3947
+
+Breush-Pagan Test
+
+	studentized Breusch-Pagan test
+
+data:  response
+BP = 1.6428, df = 2, p-value = 0.4398
+
+----------------------WHA RATE (ANTENATAL CARE VISITS)---------------------------
+
+Call:
+lm(formula = y_wha_care_1 ~ activity + gravity_residual + introversion + 
+    norm_entropy)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.25500 -0.07531  0.06234  0.07669  0.20389 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)   
+(Intercept)       9.955e-16  5.688e-02   0.000  1.00000   
+activity          8.837e-01  2.016e-01   4.384  0.00465 **
+gravity_residual -3.384e-01  2.088e-01  -1.621  0.15620   
+introversion     -2.589e-01  1.139e-01  -2.274  0.06334 . 
+norm_entropy      3.181e-01  1.022e-01   3.113  0.02077 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1886 on 6 degrees of freedom
+Multiple R-squared:  0.9806,	Adjusted R-squared:  0.9676 
+F-statistic: 75.78 on 4 and 6 DF,  p-value: 2.883e-05
+
+Breush-Pagan Test
+
+	studentized Breusch-Pagan test
+
+data:  response
+BP = 2.4628, df = 4, p-value = 0.6513
+
+---------------------------------WHA RATE (ZERO ANTENATAL CARE VISITS)--------------------
+
+Call:
+lm(formula = y_wha_nocare_1 ~ introversion + median_degree)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.14280 -0.33257 -0.07096  0.40144  1.06606 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)  
+(Intercept)    4.903e-17  2.340e-01   0.000   1.0000  
+introversion  -9.000e-01  2.875e-01  -3.130   0.0140 *
+median_degree -6.832e-01  2.875e-01  -2.376   0.0448 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.776 on 8 degrees of freedom
+Multiple R-squared:  0.5621,	Adjusted R-squared:  0.4526 
+F-statistic: 5.134 on 2 and 8 DF,  p-value: 0.03677
+
+Breush-Pagan Test
+
+	studentized Breusch-Pagan test
+
+data:  response
+BP = 0.3662, df = 2, p-value = 0.8327
+
